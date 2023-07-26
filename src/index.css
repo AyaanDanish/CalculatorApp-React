@@ -22,6 +22,18 @@ body {
   border-radius: 25px 25px 0 0;
   box-sizing: border-box;
   padding: 10px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.25em;
 }
 
 #output-text {
@@ -39,8 +51,8 @@ body {
     "ac open close div"
     "seven eight nine mul"
     "four five six minus"
-    "three two one plus"
-    "zero dot del equals";
+    "one two three plus"
+    "dot zero del equals";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
